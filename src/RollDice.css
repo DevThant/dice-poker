@@ -1,0 +1,24 @@
+.RollDice {
+    background-color: aliceblue;
+}
+
+/* Responsive row and column */
+.RollDice-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.RollDice-col {
+    flex: 1;
+    padding: 0 4px;
+}
+
+/* Change the row to column on small screens */
+@media screen and (max-width: 600px) {
+    .RollDice-row {
+        flex-direction: column;
+    }
+}

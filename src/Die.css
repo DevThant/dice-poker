@@ -1,1 +1,54 @@
-.Die {}
+.Die img {
+    width: 80px;
+    height: auto;
+    margin: 10px;
+}
+
+/* Change the size of die to responsive on every screen */
+@media screen and (min-width: 600px) {
+    .Die img {
+        width: 100px;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .Die img {
+        width: 120px;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .Die img {
+        width: 140px;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .Die img {
+        width: 160px;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 1800px) {
+    .Die img {
+        width: 180px;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 2100px) {
+    .Die img {
+        width: 200px;
+        height: auto;
+    }
+}
+
+
+.Die-roll {
+    transform: rotate(720deg);
+    transition: transform .7s;
+}
