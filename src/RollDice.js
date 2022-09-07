@@ -108,10 +108,10 @@ class RollDice extends Component {
 
         <div className="RollDice-row">
           <div className="RollDice-col">
-            <Die player={player1} />
+            <Die player={player1} isWinner={player1.baseScore>player2.baseScore} round={round}/>
           </div>
           <div className="RollDice-col">
-            <Die player={player2} />
+            <Die player={player2} isWinner={player1.baseScore<player2.baseScore} round={round}/>
           </div>
         </div>
         {round >= 6 && <button onClick={this.resetGame}>Reset</button>}
